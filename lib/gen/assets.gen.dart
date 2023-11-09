@@ -16,8 +16,39 @@ class $AssetsImagesGen {
   AssetGenImage get amazonLogo =>
       const AssetGenImage('assets/images/amazon_logo.png');
 
+  /// File path: assets/images/appliances.jpeg
+  AssetGenImage get appliances =>
+      const AssetGenImage('assets/images/appliances.jpeg');
+
+  /// File path: assets/images/books.jpeg
+  AssetGenImage get books => const AssetGenImage('assets/images/books.jpeg');
+
+  /// File path: assets/images/electronics.jpeg
+  AssetGenImage get electronics =>
+      const AssetGenImage('assets/images/electronics.jpeg');
+
+  /// File path: assets/images/essentials.jpeg
+  AssetGenImage get essentials =>
+      const AssetGenImage('assets/images/essentials.jpeg');
+
+  /// File path: assets/images/fashion.jpeg
+  AssetGenImage get fashion =>
+      const AssetGenImage('assets/images/fashion.jpeg');
+
+  /// File path: assets/images/mobiles.jpeg
+  AssetGenImage get mobiles =>
+      const AssetGenImage('assets/images/mobiles.jpeg');
+
   /// List of all assets
-  List<AssetGenImage> get values => [amazonLogo];
+  List<AssetGenImage> get values => [
+        amazonLogo,
+        appliances,
+        books,
+        electronics,
+        essentials,
+        fashion,
+        mobiles
+      ];
 }
 
 class Assets {
