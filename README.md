@@ -39,8 +39,8 @@ $ npm run start
 #### 3. Now you can start running the Flutter project
 
 ## Screenshots
-<img src="https://github.com/behong1999/amazon_clone/assets/44105063/18c78fbf-28c9-4e55-96f1-85fb458c2b14" alt="Screenshot 1" width="240" height="500">
- <img src="https://github.com/behong1999/amazon_clone/assets/44105063/c43eac18-d480-41fe-8b00-65aa0e9111b0" alt="Screenshot 2" width="240" height="500">
- <img src="https://github.com/behong1999/amazon_clone/assets/44105063/9d19bca5-fffa-4708-ba6f-6e3cbbe59216" alt="Screenshot 3" width="240" height="500">
- <img src="https://github.com/behong1999/amazon_clone/assets/44105063/3f07fb48-97b0-4fac-8542-be7ec1c46948" alt="Screenshot 4" width="240" height="500">
+<img src="https://github.com/behong1999/amazon_clone/assets/44105063/18c78fbf-28c9-4e55-96f1-85fb458c2b14" alt="Screenshot 1" width="220" height="450">
+ <img src="https://github.com/behong1999/amazon_clone/assets/44105063/c43eac18-d480-41fe-8b00-65aa0e9111b0" alt="Screenshot 2" width="220" height="450">
+ <img src="https://github.com/behong1999/amazon_clone/assets/44105063/9d19bca5-fffa-4708-ba6f-6e3cbbe59216" alt="Screenshot 3" width="220" height="450">
+ <img src="https://github.com/behong1999/amazon_clone/assets/44105063/3f07fb48-97b0-4fac-8542-be7ec1c46948" alt="Screenshot 4" width="220" height="450">
 
