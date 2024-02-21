@@ -2,5 +2,20 @@
     "cSpell.words": [
         "Cloudinary",
         "prefs"
-    ]
+    ],
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/*.freezed.dart": true,
+        "**/*.g.dart": true
+    },
+    "explorerExclude.backup": {}
 }
