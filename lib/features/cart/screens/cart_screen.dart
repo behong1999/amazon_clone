@@ -1,11 +1,9 @@
 import 'package:amazon_clone/common/widgets/app_bar.dart';
 import 'package:amazon_clone/common/widgets/custom_button.dart';
-import 'package:amazon_clone/constants/global_variables.dart';
 import 'package:amazon_clone/features/address/screens/address_screen.dart';
 import 'package:amazon_clone/features/cart/widgets/cart_product.dart';
 import 'package:amazon_clone/features/cart/widgets/cart_subtotal.dart';
 import 'package:amazon_clone/features/home/widgets/address_bar.dart';
-import 'package:amazon_clone/features/search/screens/search_screen.dart';
 import 'package:amazon_clone/providers/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -18,7 +16,6 @@ class CartScreen extends StatefulWidget {
 }
 
 class _CartScreenState extends State<CartScreen> {
-
   void navigateToAddress(double sum) {
     Navigator.pushNamed(
       context,
@@ -31,9 +28,7 @@ class _CartScreenState extends State<CartScreen> {
   Widget build(BuildContext context) {
     final user = context.watch<UserProvider>().user;
     double sum = 0;
-    user.cart
-        .map((e) => sum += e['quantity'] * e['product']['price'])
-        .toList();
+    user.cart.map((e) => sum += e['quantity'] * e['product']['price']).toList();
 
     return Scaffold(
       appBar: const PreferredSize(

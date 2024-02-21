@@ -56,7 +56,7 @@ class _AuthScreenState extends State<AuthScreen> {
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 12),
                 width: double.infinity,
-                color: GlobalVar.greyBackgroundCOlor,
+                color: GlobalVar.greyBackgroundColor,
                 child: Image.asset(
                   Assets.images.amazonLogo.path,
                   height: 30,
@@ -83,7 +83,7 @@ class _AuthScreenState extends State<AuthScreen> {
                     RadioListTile(
                       tileColor: _auth == Auth.signUp
                           ? GlobalVar.backgroundColor
-                          : GlobalVar.greyBackgroundCOlor,
+                          : GlobalVar.greyBackgroundColor,
                       activeColor: GlobalVar.secondaryColor,
                       value: Auth.signUp,
                       groupValue: _auth,
@@ -95,8 +95,12 @@ class _AuthScreenState extends State<AuthScreen> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text(
-                            'New to Amazon?',
+                          Expanded(
+                            child: Text(
+                              'New to Amazon?',
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ),
                         ],
                       ),
@@ -149,6 +153,7 @@ class _AuthScreenState extends State<AuthScreen> {
                               ),
                               const SizedBox(height: space),
                               CustomButton(
+                                color: GlobalVar.secondaryColor,
                                 text: 'Create your Amazon account',
                                 onPressed: () {
                                   if (_signUpFormKey.currentState!.validate()) {
@@ -172,7 +177,7 @@ class _AuthScreenState extends State<AuthScreen> {
                       child: RadioListTile(
                         tileColor: _auth == Auth.signIn
                             ? GlobalVar.backgroundColor
-                            : GlobalVar.greyBackgroundCOlor,
+                            : GlobalVar.greyBackgroundColor,
                         activeColor: GlobalVar.secondaryColor,
                         value: Auth.signIn,
                         groupValue: _auth,
@@ -223,6 +228,7 @@ class _AuthScreenState extends State<AuthScreen> {
                               ),
                               const SizedBox(height: space),
                               CustomButton(
+                                color: GlobalVar.secondaryColor,
                                 text: 'Sign In',
                                 onPressed: () {
                                   if (_signInFormKey.currentState!.validate()) {

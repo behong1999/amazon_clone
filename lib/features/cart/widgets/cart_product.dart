@@ -40,6 +40,7 @@ class _CartProductState extends State<CartProduct> {
     final productCart = context.watch<UserProvider>().user.cart[widget.index];
     final product = Product.fromMap(productCart['product']);
     final quantity = productCart['quantity'];
+    final width = MediaQuery.of(context).size.width * 0.5;
 
     return Column(
       children: [
@@ -58,7 +59,7 @@ class _CartProductState extends State<CartProduct> {
               Column(
                 children: [
                   Container(
-                    width: 235,
+                    width: width,
                     padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Text(
                       product.name,
@@ -69,7 +70,7 @@ class _CartProductState extends State<CartProduct> {
                     ),
                   ),
                   Container(
-                    width: 235,
+                    width: width,
                     padding: const EdgeInsets.only(left: 10, top: 5),
                     child: Text(
                       '\$${product.price}',
@@ -81,12 +82,12 @@ class _CartProductState extends State<CartProduct> {
                     ),
                   ),
                   Container(
-                    width: 235,
+                    width: width,
                     padding: const EdgeInsets.only(left: 10),
                     child: const Text('Eligible for FREE Shipping'),
                   ),
                   Container(
-                    width: 235,
+                    width: width,
                     padding: const EdgeInsets.only(left: 10, top: 5),
                     child: const Text(
                       'In Stock',

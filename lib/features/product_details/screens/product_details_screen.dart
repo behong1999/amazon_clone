@@ -89,7 +89,8 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               child: Text(
                 widget.product.name,
                 style: const TextStyle(
-                  fontSize: 15,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
