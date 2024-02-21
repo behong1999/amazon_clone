@@ -24,8 +24,10 @@
 ## Get Started
 #### 1. Create 2 env. files:
 - The first one is inside the server folder
-
-  ![image](https://github.com/behong1999/amazon_clone/assets/44105063/8bff0353-d6db-4374-bf0c-a5a5b5f26de2)
+```
+PORT = 3000
+CONNECTION_STRING = ***REMOVED***
+```
 
 - The second one is in the root folder (Please kindly contact me to get more information due to the security issues)
 
