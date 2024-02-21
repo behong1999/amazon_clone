@@ -22,14 +22,19 @@
 - **shared_preferences**: Flutter plugin for reading and writing simple key-value pairs.
 
 ## Get Started
-#### 1. Create 2 env. files:
+#### 1. Create 2 env. files (Please kindly contact me to fill in the (?) variables):
 - The first one is inside the server folder
 ```
 PORT = 3000
-CONNECTION_STRING = ***REMOVED***
+CONNECTION_STRING = (?)
 ```
 
-- The second one is in the root folder (Please kindly contact me to get more information due to the security issues)
+- The second one is in the root folder
+```
+IP_ADDRESS = {Your device's IP address}
+CLOUD_NAME = (?)
+UPLOAD_PRESET = (?)
+```
 
 #### 2. Please change the directory to the server path and enter the following command:
 ```
