@@ -50,35 +50,38 @@ class _PostsScreenState extends State<PostsScreen> {
             body: GridView.builder(
               itemCount: products!.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2),
+                crossAxisCount: 2,
+              ),
               itemBuilder: (context, index) {
                 final productData = products![index];
                 return Column(
                   children: [
                     SizedBox(
-                      height: 140,
+                      height: 130,
                       child: SingleProduct(
                         image: productData.images[0],
                       ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Expanded(
-                          child: Text(
-                            productData.name,
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 2,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Flexible(
+                            child: Text(
+                              productData.name,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 2,
+                            ),
                           ),
-                        ),
-                        IconButton(
-                          // onPressed: () => deleteProduct(productData, index),
-                          onPressed: () {},
-                          icon: const Icon(
-                            Icons.delete_outline,
+                          IconButton(
+                            onPressed: () => deleteProduct(productData, index),
+                            icon: const Icon(
+                              Icons.delete_outline,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 );

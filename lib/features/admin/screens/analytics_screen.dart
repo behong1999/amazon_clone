@@ -13,7 +13,7 @@ class AnalyticsScreen extends StatefulWidget {
 
 class _AnalyticsScreenState extends State<AnalyticsScreen> {
   final AdminServices adminServices = AdminServices();
-  double? totalSales;
+  double? totalSales = 0.0;
   List<Sales>? earnings;
 
   @override
@@ -24,7 +24,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
 
   getEarnings() async {
     var earningData = await adminServices.getEarnings(context);
-    totalSales = earningData['totalEarnings'];
+    totalSales = earningData['totalEarnings'].toDouble();
     earnings = earningData['sales'];
     setState(() {});
   }

@@ -221,7 +221,7 @@ class AdminServices {
           context: context,
           onSuccess: () {
             var response = jsonDecode(res.body);
-            totalEarning = response['totalEarnings'];
+            totalEarning = response['totalEarnings'].toDouble();
             sales = [
               Sales('Mobiles', response['mobileEarnings']),
               Sales('Essentials', response['essentialEarnings']),

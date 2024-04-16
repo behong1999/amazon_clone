@@ -29,6 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
             CategoriesBar(),
             SizedBox(height: 10),
             Carousel(),
+            SizedBox(height: 10),
             DealOfDay(),
           ],
         ),

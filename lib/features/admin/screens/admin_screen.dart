@@ -1,4 +1,5 @@
 import 'package:amazon_clone/constants/global_variables.dart';
+import 'package:amazon_clone/features/account/services/account_services.dart';
 import 'package:amazon_clone/features/admin/screens/analytics_screen.dart';
 import 'package:amazon_clone/features/admin/screens/orders_screen.dart';
 import 'package:amazon_clone/features/admin/screens/posts_screen.dart';
@@ -41,7 +42,7 @@ class _AdminScreenState extends State<AdminScreen> {
             ),
           ),
           title: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
                 alignment: Alignment.topLeft,
@@ -58,7 +59,16 @@ class _AdminScreenState extends State<AdminScreen> {
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
-              )
+              ),
+              TextButton(
+                  onPressed: () => AccountServices().logOut(context),
+                  child: const Text(
+                    'Sign Out',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ))
             ],
           ),
         ),
